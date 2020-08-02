@@ -1,0 +1,30 @@
+<section class="section about" id="about">
+    <div class="title-wrapper">
+      <h2 class="title">Join <span class="subtitle">us</span></h2>
+    </div>
+    <div class="about-center section-center">
+        <article class="about-img">
+          <img
+            src="./assets/images/about.jpeg"
+            class="about-photo"
+            alt="awesome beach"
+          />
+        </article>
+        <article class="about-info">
+          <div class="about-resort">
+                <ul>
+                    <li (click)="activate($event)"><h3 id="0">Register</h3></li>
+                    <li (click)="activate($event)"><h3 id="1">Log in</h3></li>
+                </ul>
+            </div>
+          <div *ngIf="register">
+            <backorads-register></backorads-register>
+          </div>
+          <div *ngIf="!register">
+            <backorads-log-in></backorads-log-in>
+          </div>
+        
+        </article>
+      </div>
+      
+  </section>
